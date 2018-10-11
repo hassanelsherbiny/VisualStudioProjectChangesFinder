@@ -1,0 +1,47 @@
+﻿<local:DialogBox x:Class="ChangesFinder.OptionsDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:ChangesFinder"
+             mc:Ignorable="d"  
+             Height="214.189"  Width="528.5"
+             Title="Select Option To Get Changes"
+             x:Name="DialogBox"
+             ResizeMode="NoResize"
+            
+             WindowStartupLocation="CenterScreen"
+           >
+
+    <Grid>
+        <Label Content="Save To : " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+
+        <TextBox Name="TxtSavePath" HorizontalAlignment="Left" Height="24" Margin="69,10,0,0" TextWrapping="Wrap" Text="D:\BitsDevelopmentsUpdates" VerticalAlignment="Top" Width="368"/>
+        <CheckBox Name="ChkGetAll" Content="Get All" HorizontalAlignment="Left" Margin="238,46,0,0" VerticalAlignment="Top"  Click="ChkGetAll_Click"/>
+        <TextBox Name="TxtDayCount" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"   HorizontalAlignment="Left" Height="24"  Margin="147,41,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="38">
+
+        </TextBox>
+        <Button Content="Get Changes" HorizontalAlignment="Left" Margin="112,81,0,0" VerticalAlignment="Top" Width="303" Click="Button_Click"/>
+
+        <Label Content="Get Changes Before :" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+        <Label Content="Days" HorizontalAlignment="Left" Margin="199,40,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="ChkMakeRar" Content="Create Rar" HorizontalAlignment="Left" Margin="298,46,0,0" VerticalAlignment="Top" IsChecked="True" Width="81"/>
+        <CheckBox  Name="ChkShowInExplorer" Content="Show In Explorer
+                  " HorizontalAlignment="Left" Margin="384,46,0,0" VerticalAlignment="Top" IsChecked="True" Width="116"/>
+        <Button  Name="DayDown" Content="\/" VerticalContentAlignment="Center"  Background="White" FontSize="10" Padding="0" HorizontalAlignment="Left" Margin="134,41,0,0" VerticalAlignment="Top" Width="14" Height="24" Click="DayDown_Click" />
+        <Button Name="DayUp" Content="/\" VerticalContentAlignment="Center" Background="White" FontSize="10" Padding="0" HorizontalAlignment="Left" Margin="185,41,0,0" VerticalAlignment="Top" Width="14" Height="24" Click="DayUp_Click"/>
+
+        <TextBox HorizontalAlignment="Left" Name="TxtExt"  Visibility="Hidden" Height="30" TextWrapping="Wrap" Text=".dll,.aspx,.asmx,.ascx,.cshtml,.jpg,.js,.css,.png,.jpg,.gif,.jpeg,.rpt,.resx,.master" VerticalAlignment="Top" Width="520" Margin="0,138,0,0"/>
+
+
+        <Button Name="ExtensionsBtn" Content="Extensions" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Margin="444,10,0,0" Click="ExtensionsBtn_Click"/>
+        <Button HorizontalContentAlignment="Center" 
+                    Content="Created By : Bits Developments &#xA;         Hassan Elsherbiny "   
+                    Margin="40,117,40,0" VerticalAlignment="Top" FontStyle="Italic" FontFamily="Segoe Print" 
+                
+                  Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}" 
+                    x:Name="Credits" Click="Credits_Click" Height="50" TextOptions.TextHintingMode="Animated" VerticalContentAlignment="Center"  />
+
+    </Grid>
+
+</local:DialogBox>
