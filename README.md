@@ -1,0 +1,1 @@
+Visual Studio 2017 Extension To Get Changed Files (With Predefined Extensions) Within Specified Period of days And Save Them To Specified Location With Ability To Make a rar Of output . this extension is perfect for old project that doesn't use kind of content Delivery Of Source Control and allow you To Get a patch update for a project and pass it to production.
